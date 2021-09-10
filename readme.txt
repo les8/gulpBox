@@ -3,12 +3,10 @@ How to start gulp?
 2) Copy and paste there "#src" folder, "gulpfile.js" and "package.json"
 3) Open directory with terminal
 4) Write the following commands:
-
-   npm i
-   npm install webp-converter@2.2.3 --save-dev
+	npm i
+	npm install webp-converter@2.2.3 --save-dev
 
 5) You should add mixin in (#src/scss/style.scss):
-
 	@mixin font($font_name, $file_name, $weight, $style) {
 		@font-face {
 			font-family: $font_name;
@@ -25,9 +23,10 @@ How to start gulp?
    
 
 6) You must write background styles inline to avoid problems:
-
 	background: url("../img/01.png") no-repeat 50% 50%;
 
-7)start gulp! Write the following command in your terminal:
+7) "ttf" will be connnected automatically. To connect "otf" use:
+	gulp otf2ttf
 
+8)start gulp! Write the following command in your terminal:
 	gulp
